@@ -2,7 +2,14 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-require_once './vendor/autoload.php';
+
+require 'phpmailer\Exception.php';
+
+/* The main PHPMailer class. */
+require 'phpmailer\PHPMailer.php';
+
+/* SMTP class, needed if you want to use SMTP. */
+require 'phpmailer\SMTP.php';
   function enroll($conn){
     // var_dump($_POST);
       $error = '';
