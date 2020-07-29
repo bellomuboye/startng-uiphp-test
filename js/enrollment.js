@@ -13,9 +13,11 @@ optionsList.forEach(o => {
     o.addEventListener("click", () => {
         if (o.parentElement.classList.contains('1')) {
             selected[0].innerHTML = o.querySelector("label").innerHTML;
+            o.querySelector("input").checked = true;
             optionsContainer[0].classList.remove("active");
         } if (o.parentElement.classList.contains('2')) {
             selected[1].innerHTML = o.querySelector("label").innerHTML;
+            o.querySelector("input").checked = true;
             optionsContainer[1].classList.remove("active");
         }
     });
